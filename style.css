@@ -71,14 +71,19 @@ body {
 }
 
 /* Responsive pour mobile */
-@media (max-width: 600px) {
-  .cv-actions {
-    justify-content: center;
+@media screen and (max-width: 600px) {
+  .btn-text {
+    display: none;
   }
 
   .btn-action {
-    width: 100%;
-    max-width: 300px;
+    padding: 10px;
+    /* pour un meilleur alignement sans texte */
+    font-size: 18px;
+  }
+
+  .btn-action i {
+    margin: 0;
   }
 }
 
@@ -97,7 +102,8 @@ body.dark-mode .cv-container {
 body.dark-mode .profile {
   background: #00265f;
 }
-body.dark-mode .profile a{
+
+body.dark-mode .profile a {
   color: #e0ecff;
 }
 
@@ -143,7 +149,7 @@ section {
 
 .about,
 .contact {
- 
+
   margin-bottom: 20px;
 }
 
@@ -223,6 +229,11 @@ body {
 }
 
 .contact i {
+  margin-right: 8px;
+}
+
+.reseau i {
+  font-size: 30px;
   margin-right: 8px;
 }
 
