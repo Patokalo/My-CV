@@ -9,14 +9,19 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // Télécharger en PDF
+ document.addEventListener("DOMContentLoaded", function () {
+    const downloadPdfBtn = document.getElementById("downloadPdfBtn");
+
     downloadPdfBtn.addEventListener("click", () => {
-        import('https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js')
-            .then(() => {
-                const element = document.querySelector(".cv-container");
-                html2pdf().from(element).save("cv-jean-dupont.pdf");
-            })
-            .catch(err => console.error("Erreur chargement html2pdf :", err));
+        const element = document.querySelector(".cv-container");
+        if (element) {
+            html2pdf().from(element).save("cv-aboubacar-kalo.pdf");
+        } else {
+            console.error("Élément .cv-container introuvable !");
+        }
     });
+});
+
 
     // Prévisualisation
     previewBtn.addEventListener("click", () => {
