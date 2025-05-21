@@ -95,7 +95,10 @@ body.dark-mode .cv-container {
 }
 
 body.dark-mode .profile {
-  background: #0d6efd;
+  background: #00265f;
+}
+body.dark-mode .profile a{
+  color: #e0ecff;
 }
 
 body.dark-mode .skills li {
@@ -103,7 +106,7 @@ body.dark-mode .skills li {
 }
 
 body.dark-mode section h2 {
-  border-color: #0d6efd;
+  border-color: #0045ad;
   color: #0d6efd;
 }
 
