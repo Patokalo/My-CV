@@ -271,6 +271,9 @@ section h2 {
 .experience h3 {
   margin-bottom: 5px;
 }
+.experience a {
+  color: #0d6efd;
+}
 
 .experience span {
   font-size: 14px;
